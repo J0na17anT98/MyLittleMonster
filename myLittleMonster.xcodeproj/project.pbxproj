@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3B51BC51CBD4E5400D7F36E /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B51BC01CBD4E5400D7F36E /* bite.wav */; };
+		A3B51BC61CBD4E5400D7F36E /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3B51BC11CBD4E5400D7F36E /* cave-music.mp3 */; };
+		A3B51BC71CBD4E5400D7F36E /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B51BC21CBD4E5400D7F36E /* death.wav */; };
+		A3B51BC81CBD4E5400D7F36E /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B51BC31CBD4E5400D7F36E /* heart.wav */; };
+		A3B51BC91CBD4E5400D7F36E /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3B51BC41CBD4E5400D7F36E /* skull.wav */; };
+		A3BE99341CBBFAE5000794C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */; };
+		A3BE99361CBBFAE5000794C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE99351CBBFAE5000794C3 /* ViewController.swift */; };
+		A3BE99391CBBFAE5000794C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BE99371CBBFAE5000794C3 /* Main.storyboard */; };
+		A3BE993B1CBBFAE5000794C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3BE993A1CBBFAE5000794C3 /* Assets.xcassets */; };
+		A3BE993E1CBBFAE5000794C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BE993C1CBBFAE5000794C3 /* LaunchScreen.storyboard */; };
+		A3BE99461CBC0DED000794C3 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE99451CBC0DED000794C3 /* DragImg.swift */; };
+		A3BE994C1CBC1650000794C3 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE994B1CBC1650000794C3 /* MonsterImg.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3B51BC01CBD4E5400D7F36E /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		A3B51BC11CBD4E5400D7F36E /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		A3B51BC21CBD4E5400D7F36E /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		A3B51BC31CBD4E5400D7F36E /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		A3B51BC41CBD4E5400D7F36E /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		A3BE99301CBBFAE5000794C3 /* myLittleMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myLittleMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3BE99351CBBFAE5000794C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3BE99381CBBFAE5000794C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3BE993A1CBBFAE5000794C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3BE993D1CBBFAE5000794C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3BE993F1CBBFAE5000794C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3BE99451CBC0DED000794C3 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DragImg.swift; sourceTree = "<group>"; usesTabs = 0; };
+		A3BE994B1CBC1650000794C3 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3BE992D1CBBFAE5000794C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3BE99271CBBFAE5000794C3 = {
+			isa = PBXGroup;
+			children = (
+				A3BE99321CBBFAE5000794C3 /* myLittleMonster */,
+				A3BE99311CBBFAE5000794C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3BE99311CBBFAE5000794C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3BE99301CBBFAE5000794C3 /* myLittleMonster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3BE99321CBBFAE5000794C3 /* myLittleMonster */ = {
+			isa = PBXGroup;
+			children = (
+				A3B51BC01CBD4E5400D7F36E /* bite.wav */,
+				A3B51BC11CBD4E5400D7F36E /* cave-music.mp3 */,
+				A3B51BC21CBD4E5400D7F36E /* death.wav */,
+				A3B51BC31CBD4E5400D7F36E /* heart.wav */,
+				A3B51BC41CBD4E5400D7F36E /* skull.wav */,
+				A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */,
+				A3BE99351CBBFAE5000794C3 /* ViewController.swift */,
+				A3BE99371CBBFAE5000794C3 /* Main.storyboard */,
+				A3BE993A1CBBFAE5000794C3 /* Assets.xcassets */,
+				A3BE993C1CBBFAE5000794C3 /* LaunchScreen.storyboard */,
+				A3BE993F1CBBFAE5000794C3 /* Info.plist */,
+				A3BE99451CBC0DED000794C3 /* DragImg.swift */,
+				A3BE994B1CBC1650000794C3 /* MonsterImg.swift */,
+			);
+			path = myLittleMonster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3BE992F1CBBFAE5000794C3 /* myLittleMonster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3BE99421CBBFAE5000794C3 /* Build configuration list for PBXNativeTarget "myLittleMonster" */;
+			buildPhases = (
+				A3BE992C1CBBFAE5000794C3 /* Sources */,
+				A3BE992D1CBBFAE5000794C3 /* Frameworks */,
+				A3BE992E1CBBFAE5000794C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myLittleMonster;
+			productName = myLittleMonster;
+			productReference = A3BE99301CBBFAE5000794C3 /* myLittleMonster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3BE99281CBBFAE5000794C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Techinator;
+				TargetAttributes = {
+					A3BE992F1CBBFAE5000794C3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KMTZDB3J22;
+					};
+				};
+			};
+			buildConfigurationList = A3BE992B1CBBFAE5000794C3 /* Build configuration list for PBXProject "myLittleMonster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3BE99271CBBFAE5000794C3;
+			productRefGroup = A3BE99311CBBFAE5000794C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3BE992F1CBBFAE5000794C3 /* myLittleMonster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3BE992E1CBBFAE5000794C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B51BC91CBD4E5400D7F36E /* skull.wav in Resources */,
+				A3B51BC51CBD4E5400D7F36E /* bite.wav in Resources */,
+				A3B51BC71CBD4E5400D7F36E /* death.wav in Resources */,
+				A3B51BC81CBD4E5400D7F36E /* heart.wav in Resources */,
+				A3B51BC61CBD4E5400D7F36E /* cave-music.mp3 in Resources */,
+				A3BE993E1CBBFAE5000794C3 /* LaunchScreen.storyboard in Resources */,
+				A3BE993B1CBBFAE5000794C3 /* Assets.xcassets in Resources */,
+				A3BE99391CBBFAE5000794C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3BE992C1CBBFAE5000794C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3BE994C1CBC1650000794C3 /* MonsterImg.swift in Sources */,
+				A3BE99361CBBFAE5000794C3 /* ViewController.swift in Sources */,
+				A3BE99461CBC0DED000794C3 /* DragImg.swift in Sources */,
+				A3BE99341CBBFAE5000794C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3BE99371CBBFAE5000794C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3BE99381CBBFAE5000794C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3BE993C1CBBFAE5000794C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3BE993D1CBBFAE5000794C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3BE99401CBBFAE5000794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3BE99411CBBFAE5000794C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3BE99431CBBFAE5000794C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = myLittleMonster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Techinator.myLittleMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3BE99441CBBFAE5000794C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = myLittleMonster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Techinator.myLittleMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3BE992B1CBBFAE5000794C3 /* Build configuration list for PBXProject "myLittleMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BE99401CBBFAE5000794C3 /* Debug */,
+				A3BE99411CBBFAE5000794C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3BE99421CBBFAE5000794C3 /* Build configuration list for PBXNativeTarget "myLittleMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BE99431CBBFAE5000794C3 /* Debug */,
+				A3BE99441CBBFAE5000794C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3BE99281CBBFAE5000794C3 /* Project object */;
+}
