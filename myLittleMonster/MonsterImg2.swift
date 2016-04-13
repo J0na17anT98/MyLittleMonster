@@ -16,10 +16,10 @@ class MonsterImg2: UIImageView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        playAppearAnimation()
+        playIdleAnimation()
     }
     
-    func playAppearAnimation() {
+    func playIdleAnimation() {
         
         self.image = UIImage(named:"appear1.png")
         
@@ -42,7 +42,7 @@ class MonsterImg2: UIImageView {
         self.startAnimating()
     }
     
-    func playHideAnimation() {
+    func playDeathAnimation() {
         
         self.image = UIImage(named: "hide6.png")
         
