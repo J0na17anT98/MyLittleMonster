@@ -15,10 +15,10 @@
 		A3BE99341CBBFAE5000794C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */; };
 		A3BE99361CBBFAE5000794C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE99351CBBFAE5000794C3 /* ViewController.swift */; };
 		A3BE99391CBBFAE5000794C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BE99371CBBFAE5000794C3 /* Main.storyboard */; };
-		A3BE993B1CBBFAE5000794C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3BE993A1CBBFAE5000794C3 /* Assets.xcassets */; };
 		A3BE993E1CBBFAE5000794C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BE993C1CBBFAE5000794C3 /* LaunchScreen.storyboard */; };
 		A3BE99461CBC0DED000794C3 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE99451CBC0DED000794C3 /* DragImg.swift */; };
 		A3BE994C1CBC1650000794C3 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE994B1CBC1650000794C3 /* MonsterImg.swift */; };
+		A3D158E91CC140B900FD3131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D158E81CC140B900FD3131 /* Assets.xcassets */; };
 		A3D9A2B31CBEA0A4005F2989 /* MonsterImg2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9A2B21CBEA0A4005F2989 /* MonsterImg2.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,11 +32,11 @@
 		A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3BE99351CBBFAE5000794C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3BE99381CBBFAE5000794C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A3BE993A1CBBFAE5000794C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3BE993D1CBBFAE5000794C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3BE993F1CBBFAE5000794C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3BE99451CBC0DED000794C3 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DragImg.swift; sourceTree = "<group>"; usesTabs = 0; };
 		A3BE994B1CBC1650000794C3 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
+		A3D158E81CC140B900FD3131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D9A2B21CBEA0A4005F2989 /* MonsterImg2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +77,8 @@
 				A3B51BC41CBD4E5400D7F36E /* skull.wav */,
 				A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */,
 				A3BE99351CBBFAE5000794C3 /* ViewController.swift */,
+				A3D158E81CC140B900FD3131 /* Assets.xcassets */,
 				A3BE99371CBBFAE5000794C3 /* Main.storyboard */,
-				A3BE993A1CBBFAE5000794C3 /* Assets.xcassets */,
 				A3BE993C1CBBFAE5000794C3 /* LaunchScreen.storyboard */,
 				A3BE993F1CBBFAE5000794C3 /* Info.plist */,
 				A3BE99451CBC0DED000794C3 /* DragImg.swift */,
@@ -153,7 +153,7 @@
 				A3B51BC81CBD4E5400D7F36E /* heart.wav in Resources */,
 				A3B51BC61CBD4E5400D7F36E /* cave-music.mp3 in Resources */,
 				A3BE993E1CBBFAE5000794C3 /* LaunchScreen.storyboard in Resources */,
-				A3BE993B1CBBFAE5000794C3 /* Assets.xcassets in Resources */,
+				A3D158E91CC140B900FD3131 /* Assets.xcassets in Resources */,
 				A3BE99391CBBFAE5000794C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
