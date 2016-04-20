@@ -20,6 +20,7 @@
 		A3BE994C1CBC1650000794C3 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BE994B1CBC1650000794C3 /* MonsterImg.swift */; };
 		A3D158E91CC140B900FD3131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D158E81CC140B900FD3131 /* Assets.xcassets */; };
 		A3D9A2B31CBEA0A4005F2989 /* MonsterImg2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9A2B21CBEA0A4005F2989 /* MonsterImg2.swift */; };
+		A3E9DA6A1CC6FD6D00A1C5C1 /* ViewControllerStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E9DA691CC6FD6D00A1C5C1 /* ViewControllerStart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A3BE994B1CBC1650000794C3 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 		A3D158E81CC140B900FD3131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D9A2B21CBEA0A4005F2989 /* MonsterImg2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg2.swift; sourceTree = "<group>"; };
+		A3E9DA691CC6FD6D00A1C5C1 /* ViewControllerStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				A3B51BC41CBD4E5400D7F36E /* skull.wav */,
 				A3BE99331CBBFAE5000794C3 /* AppDelegate.swift */,
 				A3BE99351CBBFAE5000794C3 /* ViewController.swift */,
+				A3E9DA691CC6FD6D00A1C5C1 /* ViewControllerStart.swift */,
 				A3D158E81CC140B900FD3131 /* Assets.xcassets */,
 				A3BE99371CBBFAE5000794C3 /* Main.storyboard */,
 				A3BE993C1CBBFAE5000794C3 /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 				A3BE99361CBBFAE5000794C3 /* ViewController.swift in Sources */,
 				A3BE99461CBC0DED000794C3 /* DragImg.swift in Sources */,
 				A3BE99341CBBFAE5000794C3 /* AppDelegate.swift in Sources */,
+				A3E9DA6A1CC6FD6D00A1C5C1 /* ViewControllerStart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

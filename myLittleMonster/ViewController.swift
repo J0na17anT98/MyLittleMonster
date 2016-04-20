@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    @IBOutlet weak var ChooseCharacterButtonRockMonster: UIButton!
+    @IBOutlet weak var ChooseCharacterButtonMole: UIButton!
+    @IBOutlet weak var CharacterText: UIImageView!
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -27,6 +30,7 @@ class ViewController: UIViewController {
     var timer: NSTimer!
     var monsterHappy = false
     var currentItem: UInt32 = 0
+    var CharacterRockMonsterPicked = true
     
     var musicPlayer: AVAudioPlayer!
     var sfxBite: AVAudioPlayer!
@@ -36,7 +40,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //ChooseCharacter()
+        PlayGame()
+    }
+    
+    func PlayGame() {
+        
+        ChooseCharacterButtonRockMonster.hidden = true
+        ChooseCharacterButtonMole.hidden = true
+        CharacterText.hidden = true
+        
         foodImg.dropTarget = monsterImg
         heartImage.dropTarget = monsterImg
         
@@ -69,6 +83,54 @@ class ViewController: UIViewController {
         }
         
         startTimer()
+
+    }
+    
+    func ChooseCharacter() {
+        
+        ChooseCharacterButtonRockMonster.hidden = false
+        ChooseCharacterButtonMole.hidden = false
+        CharacterText.hidden = false
+        monsterImg.hidden = true
+        foodImg.hidden = true
+        heartImage.hidden = true
+        penalty1Img.hidden = true
+        penalty2Img.hidden = true
+        penalty3Img.hidden = true
+        
+        if CharacterRockMonsterPicked == true{
+            return TapRockCharacter()
+        }else{
+            return TapMoleCharacter()
+        }
+    }
+    
+    func TapRockCharacter () {
+        ChooseCharacterButtonRockMonster.hidden = true
+        ChooseCharacterButtonMole.hidden = true
+        CharacterText.hidden = true
+        monsterImg.hidden = false
+        foodImg.hidden = false
+        heartImage.hidden = false
+        penalty1Img.hidden = false
+        penalty2Img.hidden = false
+        penalty3Img.hidden = false
+        
+        PlayGame()
+    }
+    
+    func TapMoleCharacter () {
+        ChooseCharacterButtonRockMonster.hidden = true
+        ChooseCharacterButtonMole.hidden = true
+        CharacterText.hidden = true
+        monsterImg.hidden = false
+        foodImg.hidden = false
+        heartImage.hidden = false
+        penalty1Img.hidden = false
+        penalty2Img.hidden = false
+        penalty3Img.hidden = false
+        
+        PlayGame()
     }
 
     func itemDroppedOnCharacter(notif: AnyObject) {
