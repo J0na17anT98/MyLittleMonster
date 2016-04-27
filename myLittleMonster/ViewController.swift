@@ -87,8 +87,6 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
         
-        startTimer()
-
     }
     
     func ChooseCharacter() {
@@ -120,7 +118,6 @@ class ViewController: UIViewController {
         obeyImg.hidden = false
         livesPanel.hidden = false
 
-        
         PlayGame()
 
     }
@@ -138,7 +135,6 @@ class ViewController: UIViewController {
         obeyImg.hidden = false
         livesPanel.hidden = false
 
-        
         PlayGame()
         
     }
@@ -158,7 +154,7 @@ class ViewController: UIViewController {
             sfxHeart.play()
         }else if rand() == 1{
             sfxBite.play()
-        }else{
+        }else if rand() == 2{
             sfxHeart.play()
         }
     }
@@ -218,7 +214,7 @@ class ViewController: UIViewController {
             
             obeyImg.alpha = DIM_ALPHA
             obeyImg.userInteractionEnabled = false
-        }else{
+        }else if rand == 2{
             foodImg.alpha = DIM_ALPHA
             foodImg.userInteractionEnabled = false
             

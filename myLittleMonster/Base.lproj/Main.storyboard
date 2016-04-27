@@ -111,7 +111,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="azR-G3-1he">
-                                <rect key="frame" x="173" y="38" width="254" height="134"/>
+                                <rect key="frame" x="173" y="73" width="254" height="134"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="715-E1-Kc1" customClass="DragImg" customModule="myLittleMonster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="134"/>
@@ -167,7 +167,7 @@
                             <constraint firstItem="5UI-kt-rvk" firstAttribute="top" secondItem="0aI-MR-vfz" secondAttribute="bottom" constant="10" id="wRl-8o-YL7"/>
                             <constraint firstItem="0aI-MR-vfz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="40" id="x01-K8-dNR"/>
                             <constraint firstItem="5UI-kt-rvk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zjd-rS-mh1"/>
-                            <constraint firstItem="azR-G3-1he" firstAttribute="top" secondItem="xLq-xe-iFE" secondAttribute="bottom" constant="-70" id="zmd-wR-HWE"/>
+                            <constraint firstItem="azR-G3-1he" firstAttribute="top" secondItem="xLq-xe-iFE" secondAttribute="bottom" constant="-35" id="zmd-wR-HWE"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
