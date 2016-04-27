@@ -197,7 +197,7 @@ class ViewController: UIViewController {
             
         }
         
-        let rand = arc4random_uniform(4)
+        let rand = arc4random_uniform(3)
         if rand == 0 {
             foodImg.alpha = DIM_ALPHA
             foodImg.userInteractionEnabled = false
@@ -207,7 +207,7 @@ class ViewController: UIViewController {
             
             obeyImg.alpha = DIM_ALPHA
             obeyImg.userInteractionEnabled = false
-        }else if random() == 1{
+        }else if rand == 1{
             foodImg.alpha = OPAQUE
             foodImg.userInteractionEnabled = true
             
@@ -217,14 +217,14 @@ class ViewController: UIViewController {
             obeyImg.alpha = DIM_ALPHA
             obeyImg.userInteractionEnabled = false
         }else{
-            foodImg.alpha = OPAQUE
-            foodImg.userInteractionEnabled = true
+            foodImg.alpha = DIM_ALPHA
+            foodImg.userInteractionEnabled = false
             
             heartImage.alpha = DIM_ALPHA
             heartImage.userInteractionEnabled = false
             
-            obeyImg.alpha = DIM_ALPHA
-            obeyImg.userInteractionEnabled = false
+            obeyImg.alpha = OPAQUE
+            obeyImg.userInteractionEnabled = true
         }
     }
         
