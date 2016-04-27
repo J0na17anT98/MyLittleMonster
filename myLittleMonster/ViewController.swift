@@ -15,12 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var monsterImg: MonsterImg!
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImage: DragImg!
+    @IBOutlet weak var obeyImg: DragImg!
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
     @IBOutlet weak var ChooseCharacterButtonRockMonster: UIButton!
     @IBOutlet weak var ChooseCharacterButtonMole: UIButton!
     @IBOutlet weak var CharacterText: UIImageView!
+    @IBOutlet weak var livesPanel: UIImageView!
     
     let DIM_ALPHA: CGFloat = 0.2
     let OPAQUE: CGFloat = 1.0
@@ -30,19 +32,21 @@ class ViewController: UIViewController {
     var timer: NSTimer!
     var monsterHappy = false
     var currentItem: UInt32 = 0
-    var CharacterRockMonsterPicked = true
+    var whichCharacter = true
     
     var musicPlayer: AVAudioPlayer!
     var sfxBite: AVAudioPlayer!
     var sfxHeart: AVAudioPlayer!
     var sfxDeath: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
+    var sfxGoodBoy: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //ChooseCharacter()
-        PlayGame()
+        
+        ChooseCharacter()
+    
     }
     
     func PlayGame() {
@@ -53,6 +57,7 @@ class ViewController: UIViewController {
         
         foodImg.dropTarget = monsterImg
         heartImage.dropTarget = monsterImg
+        obeyImg.dropTarget = monsterImg
         
         penalty1Img.alpha = DIM_ALPHA
         penalty2Img.alpha = DIM_ALPHA
@@ -70,14 +75,14 @@ class ViewController: UIViewController {
             try sfxDeath = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("death", ofType: "wav")!))
             try sfxSkull = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("skull", ofType: "wav")!))
             
+            
             musicPlayer.prepareToPlay()
             musicPlayer.play()
             
             sfxBite.prepareToPlay()
             sfxHeart.prepareToPlay()
             sfxDeath.prepareToPlay()
-            sfxSkull.prepareToPlay()
-            
+            sfxSkull.prepareToPlay()            
         } catch let err as NSError {
             print(err.debugDescription)
         }
@@ -87,7 +92,6 @@ class ViewController: UIViewController {
     }
     
     func ChooseCharacter() {
-        
         ChooseCharacterButtonRockMonster.hidden = false
         ChooseCharacterButtonMole.hidden = false
         CharacterText.hidden = false
@@ -97,15 +101,13 @@ class ViewController: UIViewController {
         penalty1Img.hidden = true
         penalty2Img.hidden = true
         penalty3Img.hidden = true
+        livesPanel.hidden = true
+        obeyImg.hidden = true
         
-        if CharacterRockMonsterPicked == true{
-            return TapRockCharacter()
-        }else{
-            return TapMoleCharacter()
-        }
+        
     }
     
-    func TapRockCharacter () {
+    @IBAction func TapRockCharacter () {
         ChooseCharacterButtonRockMonster.hidden = true
         ChooseCharacterButtonMole.hidden = true
         CharacterText.hidden = true
@@ -115,11 +117,15 @@ class ViewController: UIViewController {
         penalty1Img.hidden = false
         penalty2Img.hidden = false
         penalty3Img.hidden = false
+        obeyImg.hidden = false
+        livesPanel.hidden = false
+
         
         PlayGame()
+
     }
     
-    func TapMoleCharacter () {
+    @IBAction func TapMoleCharacter () {
         ChooseCharacterButtonRockMonster.hidden = true
         ChooseCharacterButtonMole.hidden = true
         CharacterText.hidden = true
@@ -129,8 +135,12 @@ class ViewController: UIViewController {
         penalty1Img.hidden = false
         penalty2Img.hidden = false
         penalty3Img.hidden = false
+        obeyImg.hidden = false
+        livesPanel.hidden = false
+
         
         PlayGame()
+        
     }
 
     func itemDroppedOnCharacter(notif: AnyObject) {
@@ -141,6 +151,8 @@ class ViewController: UIViewController {
         foodImg.userInteractionEnabled = false
         heartImage.alpha = DIM_ALPHA
         heartImage.userInteractionEnabled = false
+        obeyImg.alpha = DIM_ALPHA
+        obeyImg.userInteractionEnabled = false
         
         if currentItem == 0 {
             sfxHeart.play()
@@ -185,23 +197,35 @@ class ViewController: UIViewController {
             
         }
         
-        let rand = arc4random_uniform(2)
+        let rand = arc4random_uniform(4)
         if rand == 0 {
             foodImg.alpha = DIM_ALPHA
             foodImg.userInteractionEnabled = false
             
             heartImage.alpha = OPAQUE
             heartImage.userInteractionEnabled = true
+            
+            obeyImg.alpha = DIM_ALPHA
+            obeyImg.userInteractionEnabled = false
+        }else if random() == 1{
+            foodImg.alpha = OPAQUE
+            foodImg.userInteractionEnabled = true
+            
+            heartImage.alpha = DIM_ALPHA
+            heartImage.userInteractionEnabled = false
+            
+            obeyImg.alpha = DIM_ALPHA
+            obeyImg.userInteractionEnabled = false
         }else{
             foodImg.alpha = OPAQUE
             foodImg.userInteractionEnabled = true
             
             heartImage.alpha = DIM_ALPHA
             heartImage.userInteractionEnabled = false
+            
+            obeyImg.alpha = DIM_ALPHA
+            obeyImg.userInteractionEnabled = false
         }
-        
-        currentItem = rand
-        monsterHappy = false
     }
         
         
