@@ -39,7 +39,6 @@ class ViewController: UIViewController {
     var sfxHeart: AVAudioPlayer!
     var sfxDeath: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
-    var sfxGoodBoy: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +81,8 @@ class ViewController: UIViewController {
             sfxBite.prepareToPlay()
             sfxHeart.prepareToPlay()
             sfxDeath.prepareToPlay()
-            sfxSkull.prepareToPlay()            
+            sfxSkull.prepareToPlay()
+            
         } catch let err as NSError {
             print(err.debugDescription)
         }
@@ -156,8 +156,10 @@ class ViewController: UIViewController {
         
         if currentItem == 0 {
             sfxHeart.play()
-        }else{
+        }else if rand() == 1{
             sfxBite.play()
+        }else{
+            sfxHeart.play()
         }
     }
     

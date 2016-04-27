@@ -23,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A39E141A1CCEA93C00FAC953 /* goodboy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goodboy.wav; sourceTree = "<group>"; };
 		A3B51BC01CBD4E5400D7F36E /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
 		A3B51BC11CBD4E5400D7F36E /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
 		A3B51BC21CBD4E5400D7F36E /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
@@ -71,7 +70,6 @@
 		A3BE99321CBBFAE5000794C3 /* myLittleMonster */ = {
 			isa = PBXGroup;
 			children = (
-				A39E141A1CCEA93C00FAC953 /* goodboy.wav */,
 				A3B51BC01CBD4E5400D7F36E /* bite.wav */,
 				A3B51BC11CBD4E5400D7F36E /* cave-music.mp3 */,
 				A3B51BC21CBD4E5400D7F36E /* death.wav */,
