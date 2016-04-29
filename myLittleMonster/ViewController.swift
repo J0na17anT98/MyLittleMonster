@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var monsterImg: MonsterImg!
+    @IBOutlet weak var monsterImg2: MonsterImg2!
     @IBOutlet weak var foodImg: DragImg!
     @IBOutlet weak var heartImage: DragImg!
     @IBOutlet weak var obeyImg: DragImg!
@@ -182,6 +183,7 @@ class ViewController: UIViewController {
         func gameOver() {
             timer.invalidate()
             monsterImg.playDeathAnimation()
+            monsterImg2.playDeathAnimation()
             sfxDeath.play()
         }
     
@@ -191,6 +193,7 @@ class ViewController: UIViewController {
         ChooseCharacterButtonMole.hidden = false
         CharacterText.hidden = false
         monsterImg.hidden = true
+        monsterImg2.hidden = true
         foodImg.hidden = true
         heartImage.hidden = true
         penalty1Img.hidden = true
@@ -206,6 +209,7 @@ class ViewController: UIViewController {
         ChooseCharacterButtonRockMonster.hidden = true
         ChooseCharacterButtonMole.hidden = true
         CharacterText.hidden = true
+        monsterImg2.hidden = true
         monsterImg.hidden = false
         foodImg.hidden = false
         heartImage.hidden = false
@@ -222,7 +226,8 @@ class ViewController: UIViewController {
         ChooseCharacterButtonRockMonster.hidden = true
         ChooseCharacterButtonMole.hidden = true
         CharacterText.hidden = true
-        monsterImg.hidden = false
+        monsterImg.hidden = true
+        monsterImg2.hidden = false
         foodImg.hidden = false
         heartImage.hidden = false
         penalty1Img.hidden = false

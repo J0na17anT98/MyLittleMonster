@@ -136,12 +136,20 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appear6" translatesAutoresizingMaskIntoConstraints="NO" id="5gX-Cb-ADc" userLabel="Monster Img 2" customClass="MonsterImg2" customModule="myLittleMonster" customModuleProvider="target">
+                                <rect key="frame" x="51" y="348" width="235" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="BuP-7v-kYm"/>
+                                    <constraint firstAttribute="width" constant="235" id="gOZ-rx-fTM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Isz-Zo-zwE" secondAttribute="trailing" id="3Bb-5y-eXS"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8YL-G1-bgE" secondAttribute="bottom" constant="34" id="4ZG-gJ-xfm"/>
                             <constraint firstAttribute="trailing" secondItem="cpQ-FQ-QEv" secondAttribute="trailing" id="4zb-I7-2CK"/>
+                            <constraint firstItem="5gX-Cb-ADc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="BiR-EU-SXs"/>
                             <constraint firstItem="BNb-Bv-HPG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BuF-Jf-Oyi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cpQ-FQ-QEv" secondAttribute="bottom" id="Buh-N2-8U7"/>
                             <constraint firstItem="5UI-kt-rvk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CaP-7B-1aX"/>
@@ -161,6 +169,7 @@
                             </constraint>
                             <constraint firstItem="5UI-kt-rvk" firstAttribute="top" secondItem="xLq-xe-iFE" secondAttribute="bottom" constant="95" id="bdW-JZ-Psg"/>
                             <constraint firstItem="0aI-MR-vfz" firstAttribute="top" secondItem="p8G-oB-qgO" secondAttribute="bottom" id="hML-v6-45c"/>
+                            <constraint firstAttribute="bottom" secondItem="5gX-Cb-ADc" secondAttribute="bottom" constant="51" id="mZ9-Lz-s2p"/>
                             <constraint firstItem="BNb-Bv-HPG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o68-Hf-Nna"/>
                             <constraint firstItem="0aI-MR-vfz" firstAttribute="leading" secondItem="5UI-kt-rvk" secondAttribute="trailing" id="oYY-T2-IEr"/>
                             <constraint firstItem="Isz-Zo-zwE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vWi-2L-wl1"/>
@@ -194,6 +203,7 @@
                         <outlet property="heartImage" destination="715-E1-Kc1" id="iBn-sM-KFj"/>
                         <outlet property="livesPanel" destination="xLq-xe-iFE" id="QMm-lZ-eMx"/>
                         <outlet property="monsterImg" destination="8YL-G1-bgE" id="B9f-wx-Tt9"/>
+                        <outlet property="monsterImg2" destination="5gX-Cb-ADc" id="4dF-dA-fJI"/>
                         <outlet property="obeyImg" destination="g7J-fz-VIl" id="mev-dp-6jz"/>
                         <outlet property="penalty1Img" destination="ksn-bV-au7" id="Dbk-Gh-OiQ"/>
                         <outlet property="penalty2Img" destination="thi-xC-vqg" id="tnG-ZI-3mo"/>
