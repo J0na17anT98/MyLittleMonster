@@ -185,6 +185,7 @@ class ViewController: UIViewController {
             monsterImg.playDeathAnimation()
             monsterImg2.playDeathAnimation()
             sfxDeath.play()
+            
         }
     
     
@@ -218,6 +219,7 @@ class ViewController: UIViewController {
         penalty3Img.hidden = false
         obeyImg.hidden = false
         livesPanel.hidden = false
+
         
         playGame()
     }
@@ -235,8 +237,10 @@ class ViewController: UIViewController {
         penalty3Img.hidden = false
         obeyImg.hidden = false
         livesPanel.hidden = false
+
         
         playGame()
     }
+    
     
 }
